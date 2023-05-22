@@ -206,7 +206,7 @@ img {
   color: var(--Almost-Black);
 }
 .hero-text p {
-  font-size: clamp(14px, 1vw, 16px);
+  font-size: clamp(10px, 1vw, 14px);
   font-weight: 500;
   color: var(--Almost-Black);
   opacity: 0.5;
@@ -232,8 +232,11 @@ img {
   justify-content: space-between;
   margin-top: 5vh;
 }
+.barnds div {
+  margin-right: 10px;
+}
 .barnds img {
-  width: 80%;
+  width: 80px;
 }
 .hero-image-mobile {
   display: block;
@@ -242,18 +245,22 @@ img {
   display: block;
 }
 .hero-image-desktop {
-  padding: 2vw;
+  padding: 11vw;
   padding-top: 50px;
   display: none;
-  width: auto;
-  height: 750px;
 }
 .hero-image-desktop img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-
+@media (max-width: 1280px) {
+  .hero-image-desktop {
+    padding: 15vw;
+    padding-top: 50px;
+    display: none;
+  }
+}
 @media (min-width: 720px) {
   .navbar {
     display: flex;
