@@ -58,7 +58,7 @@ img {
   bottom: 0;
   width: 0%;
   background-color: var(--Almost-White);
-
+  z-index: 222;
   overflow: hidden;
 }
 .links {
@@ -99,7 +99,7 @@ img {
 }
 .btn-toggle {
   background-color: transparent;
-  z-index: 99;
+  z-index: 223;
 }
 
 .btn {
@@ -201,19 +201,20 @@ img {
   text-align: center;
 }
 .hero-title {
-  font-size: clamp(30px, 6vw, 50px);
+  font-size: clamp(30px, 8vw, 65px);
   margin-bottom: 20px;
   color: var(--Almost-Black);
 }
 .hero-text p {
-  font-size: clamp(12px, 1vw, 18px);
+  font-size: clamp(14px, 1vw, 16px);
   font-weight: 500;
-  color: var(--medium-gray);
+  color: var(--Almost-Black);
+  opacity: 0.5;
   line-height: 1.5;
 }
 .hero-btn {
   margin-top: 20px;
-  padding: 15px;
+  padding: 20px;
   padding-top: 13px;
   padding-bottom: 13px;
   border-radius: 10px;
@@ -241,7 +242,7 @@ img {
   display: block;
 }
 .hero-image-desktop {
-  padding: 10vw;
+  padding: 2vw;
   padding-top: 50px;
   display: none;
   width: auto;
@@ -286,6 +287,7 @@ img {
   }
   .login-btn {
     margin-bottom: 0px;
+    margin-right: 30px;
   }
   .mobile-auth {
     display: none;
@@ -315,10 +317,12 @@ img {
   .hero-text {
     width: 50%;
     text-align: left;
-    padding: 100px;
+    padding: 200px;
+    padding-left: 220px;
+    padding-top: 150px;
   }
   .hero-title {
-    max-width: 350px;
+    max-width: 450px;
     margin-bottom: 30px;
   }
   .hero-text p {
