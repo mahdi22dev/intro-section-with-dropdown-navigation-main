@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import logo from "./assets/images/logo.svg";
 import btn_open_icon from "./assets/images/icon-menu.svg";
@@ -20,7 +20,16 @@ function App() {
   const [OpenNavbar, SetOpenNavbar] = useState(false);
   const [Openfeatures, SetOpenfeatures] = useState(false);
   const [Opencompany, setOpencompany] = useState(false);
-
+  // useEffect(() => {
+  //   document.querySelectorAll("*").forEach((element) => {
+  //     // Do whatever you want with the node object.
+  //     element.classList.toggle("opacity", OpenNavbar);
+  //     if (element.classList.contains("navbar-header")) {
+  //       console.log("yes");
+  //       element.classList.remove("opacity");
+  //     }
+  //   });
+  // }, [OpenNavbar]);
   const navbarToggle = () => {
     SetOpenNavbar(!OpenNavbar);
   };
